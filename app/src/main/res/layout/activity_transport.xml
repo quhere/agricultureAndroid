@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#6992FD"
+    tools:context=".TransportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="#6992FD"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tvTransportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhà phân phối"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#E4EBFD"
+            android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+            android:id="@+id/imageDistributor"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/caylua1"
+            android:textColor="#E4EBFD"
+            />
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            &lt;!&ndash;Nhan cua thong tin&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:text="Nhà phân phối:"-->
+<!--                    android:textColor="#E4EBFD" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:text="Địa chỉ:"-->
+<!--                    android:textColor="#E4EBFD" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:text="Email:"-->
+<!--                    android:textColor="#E4EBFD" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:text="SĐT:"-->
+<!--                    android:textColor="#E4EBFD" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:text="Fax:"-->
+<!--                    android:textColor="#E4EBFD" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="2"-->
+<!--                android:orientation="vertical">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/distributorName"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:text="Nhà phân phối:"-->
+<!--                    android:textColor="#E4EBFD" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/distributorAddress"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:text="Địa chỉ:"-->
+<!--                    android:textColor="#E4EBFD" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/distributorEmail"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:text="Email:"-->
+<!--                    android:textColor="#E4EBFD" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/distributorPhone"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:text="SĐT:"-->
+<!--                    android:textColor="#E4EBFD" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/distributorFax"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginBottom="4dp"-->
+<!--                    android:text="Fax:"-->
+<!--                    android:textColor="#E4EBFD" />-->
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Đại lý phân phối:"
+                            android:textColor="#E4EBFD" />
+                        <TextView
+                            android:id="@+id/distributorName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Đại lý phân phối"
+                            android:textColor="#E4EBFD" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Mã số thuế:"
+                            android:textColor="#E4EBFD" />
+                        <TextView
+                            android:id="@+id/distributorTaxCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Mã số thuế"
+                            android:textColor="#E4EBFD" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Ngày thành lập:"
+                            android:textColor="#E4EBFD" />
+                        <TextView
+                            android:id="@+id/distributorEstablishment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Ngày thành lập"
+                            android:textColor="#E4EBFD" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Địa chỉ:"
+                            android:textColor="#E4EBFD" />
+                        <TextView
+                            android:id="@+id/distributorAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Địa chỉ"
+                            android:textColor="#E4EBFD" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Email:"
+                            android:textColor="#E4EBFD" />
+                        <TextView
+                            android:id="@+id/distributorEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Email"
+                            android:textColor="#E4EBFD" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="SĐT:"
+                            android:textColor="#E4EBFD" />
+                        <TextView
+                            android:id="@+id/distributorPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="SĐT"
+                            android:textColor="#E4EBFD" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Được quản lý bởi:"
+                            android:textColor="#E4EBFD" />
+                        <TextView
+                            android:id="@+id/distributorManager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Managerment"
+                            android:textColor="#E4EBFD" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Tình trạng hoạt động:"
+                            android:textColor="#E4EBFD" />
+                        <TextView
+                            android:id="@+id/distributorActivated"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="activated"
+                            android:textColor="#E4EBFD" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Giới thiệu:"
+                            android:textColor="#E4EBFD" />
+                        <TextView
+                            android:id="@+id/distributorDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="description"
+                            android:textColor="#E4EBFD" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Fax:"
+                            android:textColor="#E4EBFD" />
+                        <TextView
+                            android:id="@+id/distributorFax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="Fax"
+                            android:textColor="#E4EBFD" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>
