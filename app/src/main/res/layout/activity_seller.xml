@@ -268,7 +268,7 @@
                         <TextView
                             android:id="@+id/sellerPhone"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginBottom="4dp"
                             android:text="SĐT"
@@ -289,7 +289,7 @@
                         <TextView
                             android:id="@+id/sellerManager"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginBottom="4dp"
                             android:text="Managerment"
@@ -310,7 +310,7 @@
                         <TextView
                             android:id="@+id/sellerActivated"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginBottom="4dp"
                             android:text="activated"
@@ -331,7 +331,7 @@
                         <TextView
                             android:id="@+id/sellerDescription"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginBottom="4dp"
                             android:text="description"
